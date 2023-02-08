@@ -1,0 +1,41 @@
+{
+  "db_config": {
+    "dialect": "mysql",
+    "db_path": "root:password@(127.0.0.1:3306)/relayer?charset=utf8&parseTime=True&loc=Local"
+  },
+  "chain_config": {
+    "asc_start_height": 1,
+    "asc_providers": ["https://data-seed-prebsc-1-s1.binance.org:8545"],
+    "asc_confirm_num": 2,
+    "asc_cross_chain_contract_address": "0x0000000000000000000000000000000000001004",
+
+    "afc_rpc_addrs": ["tcp://dataseed1.binance.org:80", "https://data-seed-pre-0-s1.binance.org:443"],
+    "afc_key_type": "mnemonic",
+    "afc_aws_region": "",
+    "afc_aws_secret_name": "",
+    "afc_mnemonic": "tongue wage scan absent emerge clutch card advance champion radio pool disorder dumb rival path crisp angry slide phone pudding resist mimic sense trust",
+
+    "relay_interval": 1000
+  },
+  "log_config": {
+    "level": "INFO",
+    "filename": "",
+    "max_file_size_in_mb": 0,
+    "max_backups_of_log_files": 0,
+    "max_age_to_retain_log_files_in_days": 0,
+    "use_console_logger": true,
+    "use_file_logger": false,
+    "compress": false
+  },
+  "admin_config": {
+    "listen_addr": ":8080"
+  },
+  "alert_config": {
+    "moniker": "moniker",
+    "telegram_bot_id": "",
+    "telegram_chat_id": "",
+    "pager_duty_auth_token": "",
+    "block_update_time_out": 60,
+    "package_delay_alert_threshold": 30
+  }
+}
